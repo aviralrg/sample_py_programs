@@ -14,7 +14,9 @@ print("Text:")
 print("\t"+Line)
 sub_text = Line.split(sep=":")
 
-print("Sub text after splitting with \':\'",end="")
-for x in sub_text:
-    print("\n\t"+x,end="")
+for idx,valx in enumerate(sub_text):
+    if(idx==0):
+        print("\nKey: \t"+valx,end="")
+    elif(idx==1):
+        print("\nVal: \t"+valx,end="")
 f.close()
